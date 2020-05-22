@@ -6,7 +6,7 @@ body {
 
 #sidebar {
   height: 100%;
-  width: 180px;
+  width: 200px;
   position: fixed;
   left: 0;
   top: 0;
@@ -18,10 +18,10 @@ body {
   justify-content: center;
   align-items: flex-end;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.25em;
 
   .sidebar_title {
-    // border: 1px solid black;
+    transform: scaleY(1.3);
     margin: 0;
     a {
       text-transform: uppercase;
@@ -31,7 +31,7 @@ body {
   .sidebar_subtitle {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    margin: 5px 0px 30px;
+    margin: 10px 0px 30px;
     padding: 5px 0;
     letter-spacing: 0.05em;
   }
@@ -50,7 +50,7 @@ body {
 }
 
 #main_content {
-  margin-left: 210px;
+  margin-left: 230px;
 
   #header {
     background: $blue;
