@@ -1,24 +1,8 @@
-# README
+# How it looks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Credits
+Yonathan's udemy tutorial: https://www.udemy.com/course/8-beautiful-ruby-on-rails-apps-in-30-days/
+<br>(a little outdated, but good nonetheless)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Designs made using: Affinity Designer https://affinity.serif.com/en-gb/designer/
