@@ -13,10 +13,11 @@
 
   <body>
     <div id="sidebar">
-      <h2 class="sidebar_title"><%= link_to "Cucumbrr", root_path, class: "white_link" %></h2>
+      <h2 class="sidebar_title"><%= link_to "Cucumbrr", root_path %></h2>
+      <p class="sidebar_subtitle">tumblr, but cooler</p>
       <ul>
         <li>
-          <%= link_to "Posts", root_path, class: "white_link" %>
+          <%= link_to "Posts", root_path %>
         </li>
         <li>
           About
@@ -31,7 +32,7 @@
         <p>Post Feed</p>
         <div class="buttons">
           <button class="button">
-            <%= link_to "Make Post", new_post_path, class: "white_link" %>
+            <%= link_to "Make Post", new_post_path %>
           </button>
           <button class="button">
             Log Out

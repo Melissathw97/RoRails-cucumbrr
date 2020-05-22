@@ -3,8 +3,9 @@
     <h2 class="post_title">
       <%= link_to post.title, post %>
     </h2>
-    <p class="post_timestamp">
-      <%= time_ago_in_words(post.created_at) %>
+    <p class="post_snippet"><%= truncate(post.body, length: 100)%></p>
+    <p class="timestamp">
+      <%= time_ago_in_words(post.created_at) %> ago
     </p>
   </div>
 <% end %>

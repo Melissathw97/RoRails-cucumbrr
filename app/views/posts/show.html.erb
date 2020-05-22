@@ -1,13 +1,23 @@
-<div class="post_content">
+<div class="post_wrapper">
   <h1 class="post_title">
     <%= @post.title %>
   </h1>
 
-  <p class="post_timestamp">
-    Submitted <%= time_ago_in_words(@post.created_at) %> ago
+  <p class="timestamp">
+    Posted <%= time_ago_in_words(@post.created_at) %> ago |
+    <%= link_to "Edit", edit_post_path(@post) %> |
+    <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you wanna delete?" } %>
   </p>
 
   <p class="post_body">
     <%= @post.body %>
   </p>
+
+  <div id="comments">
+    <h2><%= @post.comments.count %> comment(s)</h2>
+    <hr>
+    <%= render @post.comments %>
+    <h3 class="comment_prompt">Feel free to comment!</h3>
+    <%= render "comments/form" %>
+  </div>
 </div>
