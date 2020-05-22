@@ -6,7 +6,7 @@
   <p class="post_timestamp">
     Posted <%= time_ago_in_words(@post.created_at) %> ago |
     <%= link_to "Edit", edit_post_path(@post) %> |
-    <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you wanna delete?" }%>
+    <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you wanna delete?" } %>
   </p>
 
   <p class="post_body">
