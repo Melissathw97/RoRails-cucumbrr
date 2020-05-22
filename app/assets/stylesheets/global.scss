@@ -4,6 +4,38 @@ body {
   font-family: 'Balsamiq Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.timestamp { 
+  font-size: 0.8em;
+  color: gray;
+}
+
+input[type="text"], textarea {
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 15px 0 20px;
+}
+
+input[type="text"] {
+  border: 2px solid $blue;
+}
+
+textarea {
+  height: 200px;
+  border: 2px solid $green;
+}
+
+input[type="submit"] {
+  padding: 7px 10px;
+  background: $green;
+  border-radius: 5px;
+}
+
 #sidebar {
   height: 100%;
   width: 200px;
@@ -44,16 +76,6 @@ body {
   }
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.timestamp { 
-  font-size: 0.8em;
-  color: gray;
-}
-
 #main_content {
   margin-left: 230px;
 
@@ -80,26 +102,4 @@ a {
       }
     }
   }
-}
-
-input[type="text"], textarea {
-  width: 90%;
-  padding: 8px;
-  border-radius: 5px;
-  margin: 15px 0 20px;
-}
-
-input[type="text"] {
-  border: 2px solid $blue;
-}
-
-textarea {
-  height: 200px;
-  border: 2px solid $green;
-}
-
-input[type="submit"] {
-  padding: 7px 10px;
-  background: $green;
-  border-radius: 5px;
 }

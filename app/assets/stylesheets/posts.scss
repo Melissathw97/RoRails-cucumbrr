@@ -5,9 +5,11 @@
   padding: 20px 40px;
 
   .post_title {
+    color: $blue;
+
     a {
       text-decoration: none;
-      color: $blue;
+      color: inherit;
     }
   }
 
@@ -15,19 +17,11 @@
     color: lightgray;
   }
 
-}
-
-.post_content {
-  padding: 40px;
-
-  .post_title {
-    color: $blue;
-  }
-
   .post_body {
-    margin-top: 40px;
+    margin: 40px 0;
     line-height: 25px;
   }
+
 }
 
 .post_form {
