@@ -19,7 +19,6 @@
 
   .post_body {
     margin: 40px 0;
-    line-height: 25px;
   }
 
 }
@@ -36,16 +35,30 @@
 
 #comments {
   margin-top: 100px;
+  max-width: 680px;
 
   .comment {
     border-bottom: 1px solid lightgray;
     padding: 10px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .comment_name {
-      text-transform: uppercase;
+    .comment_content {
+      width: 70%;
+
+      .comment_name {
+        text-transform: uppercase;
+      }
     }
   }
   .comment_prompt {
     margin: 50px 0;
+  }
+
+  .delete_comment {
+    border: none;
+    background: $red;
+    padding: 5px 8px;
   }
 }
