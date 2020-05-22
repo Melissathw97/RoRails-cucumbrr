@@ -17,3 +17,20 @@
     font-size: 0.8em;
   }
 }
+
+.post_content {
+  padding: 40px;
+
+  .post_title {
+    color: #529FCD;
+  }
+
+  .post_timestamp {
+    font-style: italic;
+  }
+
+  .post_body {
+    margin-top: 40px;
+    line-height: 25px;
+  }
+}
