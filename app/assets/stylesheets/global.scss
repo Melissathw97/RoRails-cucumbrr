@@ -6,7 +6,7 @@ body {
 
 #sidebar {
   height: 100%;
-  width: 170px;
+  width: 180px;
   position: fixed;
   left: 0;
   top: 0;
@@ -16,11 +16,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  color: white;
+  font-size: 1.1em;
 
   .sidebar_title {
+    // border: 1px solid black;
+    margin: 0;
     a {
       text-transform: uppercase;
     }
+  }
+
+  .sidebar_subtitle {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 5px 0px 30px;
+    padding: 5px 0;
+    letter-spacing: 0.05em;
   }
 
   ul {
@@ -37,7 +49,7 @@ body {
 }
 
 #main_content {
-  margin-left: 200px;
+  margin-left: 210px;
 
   #header {
     background: $blue;
@@ -64,19 +76,20 @@ body {
   }
 }
 
-input[type="text"] { 
+input[type="text"], textarea {
   width: 90%;
   padding: 8px;
   border-radius: 5px;
+  margin: 15px 0 20px;
+}
+
+input[type="text"] {
   border: 2px solid $blue;
 }
 
 textarea {
-  width: 90%;
   height: 200px;
-  padding: 8px;
   border: 2px solid $green;
-  border-radius: 5px;
 }
 
 input[type="submit"] {
