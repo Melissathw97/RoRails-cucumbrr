@@ -1,3 +1,19 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.post_wrapper {
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+
+  .post_title {
+    a {
+      text-decoration: none;
+      color: #529FCD;
+    }
+  }
+
+  .post_timestamp { 
+    font-size: 0.8em;
+  }
+}
