@@ -15,9 +15,11 @@
     color: lightgray;
   }
 
-  .post_timestamp { 
-    font-size: 0.8em;
-  }
+}
+
+.post_timestamp { 
+  font-size: 0.8em;
+  color: gray;
 }
 
 .post_content {
@@ -25,10 +27,6 @@
 
   .post_title {
     color: $blue;
-  }
-
-  .post_timestamp {
-    font-style: italic;
   }
 
   .post_body {
@@ -39,4 +37,10 @@
 
 .post_form {
   padding: 40px 70px;
+}
+
+.errors {
+  background: $red;
+  padding: 10px 20px;
+  margin: 0 0 40px;
 }
