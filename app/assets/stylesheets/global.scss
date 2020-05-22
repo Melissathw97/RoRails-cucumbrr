@@ -1,3 +1,5 @@
+@import 'variables';
+
 body {
   font-family: 'Balsamiq Sans', sans-serif;
 }
@@ -8,7 +10,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  background: #88D0AD;
+  background: $green;
   display: flex;
   padding: 0 30px 0 0;
   flex-direction: column;
@@ -38,7 +40,7 @@ body {
   margin-left: 200px;
 
   #header {
-    background: #529FCD;
+    background: $blue;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,11 +49,9 @@ body {
 
     p {
       font-size: 1.2em;
-      // line-height: 15px;
     }
 
     .buttons {
-
       .button {
         background: transparent;
         border: 1px solid white;
@@ -62,4 +62,25 @@ body {
       }
     }
   }
+}
+
+input[type="text"] { 
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid $blue;
+}
+
+textarea {
+  width: 90%;
+  height: 200px;
+  padding: 8px;
+  border: 2px solid $green;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 7px 10px;
+  background: $green;
+  border-radius: 5px;
 }

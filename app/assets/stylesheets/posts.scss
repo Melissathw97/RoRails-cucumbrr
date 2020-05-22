@@ -1,6 +1,4 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+@import 'variables';
 
 .post_wrapper {
   border-bottom: 1px solid lightgray;
@@ -9,7 +7,7 @@
   .post_title {
     a {
       text-decoration: none;
-      color: #529FCD;
+      color: $blue;
     }
   }
 
@@ -22,7 +20,7 @@
   padding: 40px;
 
   .post_title {
-    color: #529FCD;
+    color: $blue;
   }
 
   .post_timestamp {
@@ -33,4 +31,8 @@
     margin-top: 40px;
     line-height: 25px;
   }
+}
+
+.post_form {
+  padding: 40px 70px;
 }
