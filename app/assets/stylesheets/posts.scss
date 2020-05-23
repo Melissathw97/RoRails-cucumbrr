@@ -7,9 +7,8 @@
   .post_title {
     color: $blue;
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    a:hover {
+      color: $hover-blue;
     }
   }
 
