@@ -18,14 +18,14 @@ a {
   color: gray;
 }
 
-input[type="text"], textarea {
-  width: 90%;
+input[type="text"], textarea, input[type="password"] {
+  width: 95%;
   padding: 8px;
   border-radius: 5px;
   margin: 15px 0 20px;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
   border: 2px solid $blue;
 }
 
@@ -38,7 +38,22 @@ input[type="submit"] {
   padding: 7px 10px;
   background: $green;
   border-radius: 5px;
+  cursor: pointer;
 }
+
+.errors {
+  background: $red;
+  padding: 10px 20px;
+  margin: 0 0 40px;
+  width: 450px;
+}
+
+// .field_with_errors {
+//   background: $red;
+//   // border: 2px solid $red;
+//   margin: 0;
+//   padding: 0;
+// }
 
 #sidebar {
   height: 100%;
@@ -78,6 +93,8 @@ input[type="submit"] {
 
   ul {
     list-style: none;
+    text-align: right;
+    
     li {
       line-height: 30px;
 
