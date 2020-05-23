@@ -89,6 +89,7 @@ input[type="submit"] {
     align-items: center;
     justify-content: space-between;
     padding: 3px 25px;
+    height: 60px;
     color: white;
 
     p {
@@ -101,7 +102,7 @@ input[type="submit"] {
         border: 1px solid white;
         padding: 7px 10px;
         border-radius: 10px;
-        margin: 0 5px;
+        margin: -5px 5px 0;
         color: inherit;
       }
     }
