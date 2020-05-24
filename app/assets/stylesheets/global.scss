@@ -40,6 +40,12 @@ input[type="submit"], .green_button {
   background: $green;
   border-radius: 5px;
   cursor: pointer;
+
+  &:hover {
+    background: none;
+    border: 1px solid $dark-green;
+    color: $dark-green;
+  }
 }
 
 .errors {
@@ -145,6 +151,11 @@ input[type="submit"], .green_button {
         border-radius: 10px;
         margin: -5px 5px 0;
         color: inherit;
+
+        &:hover {
+          background: white;
+          color: $blue;
+        }
       }
 
       .dropdown {
