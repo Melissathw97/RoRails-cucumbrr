@@ -1,5 +1,52 @@
 @import 'variables';
 
+#welcome_wrapper {
+  margin: 40px;
+
+  .welcome {
+    padding: 30px 50px 50px;
+    max-width: 500px;
+    text-align: center;
+    color: $blue;
+    border: 3px dashed $blue;
+    border-radius: 20px;
+    margin: 0 auto;
+  
+    p {
+      color: $hover-blue;
+    }
+
+    hr {
+      margin: 40px 0 20px;
+      height: 1px;
+      background-color: $blue;
+      border: none;
+    }
+
+    .user_prompt {
+      display: flex;
+      justify-content: space-around;
+
+      div {
+        width: 50%;
+      }
+    }
+  }
+    
+  .check_out {
+    margin: 100px 0px -30px;
+    text-align: center;
+    color: $green;
+    line-height: 0.1em;
+    border-bottom: 2px solid $green;
+
+    span {
+      background: white;
+      padding: 0 8px;
+    }
+  }
+}
+
 .post_wrapper {
   border-bottom: 1px solid lightgray;
   padding: 20px 40px;

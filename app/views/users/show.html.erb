@@ -1,7 +1,12 @@
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+<div id="user_page">
+  <p>
+    <h1><%= @user.username %></h1>
+  </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+  <p>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </p>
+
+  <%= link_to 'Update Profile', edit_user_path(@user) %>
+</div>
