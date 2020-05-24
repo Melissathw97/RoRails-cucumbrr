@@ -23,6 +23,7 @@ input[type="text"], textarea, input[type="password"] {
   padding: 8px;
   border-radius: 5px;
   margin: 15px 0 20px;
+  outline: none;
 }
 
 input[type="text"], input[type="password"] {
@@ -48,11 +49,26 @@ input[type="submit"] {
   width: 450px;
 }
 
+.alert {
+  width: 500px;
+  border-radius: 10px;
+  background: $green;
+  padding: 10px 0;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  line-height: 30px;
+}
+
+.green_link {
+  text-decoration: underline;
+  color: $dark-green;
+
+  &:hover {
+    color: $green;
+  }
+}
 // .field_with_errors {
-//   background: $red;
-//   // border: 2px solid $red;
-//   margin: 0;
-//   padding: 0;
 // }
 
 #sidebar {

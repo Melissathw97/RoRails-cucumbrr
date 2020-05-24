@@ -2,4 +2,8 @@
   <h1>Sign up!</h1>
 
   <%= render 'form', user: @user %>
+
+  <p>
+    Already have an account? <%= link_to "Log in!", login_path, class: "green_link"%>
+  </p>
 </div>
