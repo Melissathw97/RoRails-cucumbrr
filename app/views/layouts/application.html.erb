@@ -24,8 +24,21 @@
         </li>
       </ul>
       <ul>
-        <li><%= link_to "Log In", login_path %></li>
-        <li><%= link_to "Sign Up", signup_path %></li>
+        <% if current_user %>
+          <li>
+            <%= link_to current_user.email, current_user %>
+          </li>
+          <li>
+            <%= link_to "Log Out", logout_path, data: { confirm: "Log out?" } %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to "Log In", login_path %>
+          </li>
+          <li>
+            <%= link_to "Sign Up", signup_path %>
+          </li>
+        <% end %>
       </ul>
     </div>
 
@@ -40,12 +53,11 @@
         <% end %>
         <div class="buttons">
           <button class="button">
-            <%= link_to "Make Post", new_post_path %>
+            <%= link_to "Add Post", new_post_path %>
           </button>
           <% if current_user %>
-            <%= current_user.email %>
             <button class="button">
-              <%= link_to "Log Out", logout_path %>
+              <%= link_to "Log Out", logout_path, data: { confirm: "Log out?" } %>
             </button>
           <% else %>
             <button class="button">
@@ -58,13 +70,13 @@
       <% flash.each do |name, msg| %>
         <%= content_tag(:div, msg, class: "alert") do %>
           <%= msg %>
-          <button 
+          <%# <button 
             type="button" 
             class="close" 
             data-dismiss="alert"
           >
             &times;
-          </button>
+          </button> %>
         <% end %>
       <% end %>
 

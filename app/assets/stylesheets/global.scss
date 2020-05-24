@@ -146,6 +146,11 @@ input[type="submit"] {
         margin: -5px 5px 0;
         color: inherit;
       }
+
+      .dropdown {
+        visibility: hidden;
+        position: absolute;
+      } 
     }
   }
 }
