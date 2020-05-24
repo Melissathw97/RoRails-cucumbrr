@@ -49,10 +49,10 @@
           <%= link_to "< Back to Post Feed", root_path %>
         <% end %>
         <div class="buttons">
-          <button class="button">
-            <%= link_to "Add Post", new_post_path %>
-          </button>
           <% if current_user %>
+            <button class="button">
+              <%= link_to "Add Post", new_post_path %>
+            </button>
             <button class="button">
               <%= link_to "Log Out", logout_path, data: { confirm: "Log out?" } %>
             </button>
