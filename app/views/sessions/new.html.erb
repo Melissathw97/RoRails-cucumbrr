@@ -1,0 +1,23 @@
+<div id="user_form">
+<h1>Log In!</h1>
+
+<%= form_with url: sessions_path do |form| %>
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </p>
+
+  <p>
+    <%= form.label :password %><br>
+    <%= form.password_field :password %>
+  </p>
+
+  <p>
+    <%= form.submit "log in" %>
+  </p>
+<% end %>
+
+<p>
+  No account yet? <%= link_to "Sign up!", signup_path, class: "green_link"%>
+</p>
+</div>
