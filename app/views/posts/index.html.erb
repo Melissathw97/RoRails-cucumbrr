@@ -1,3 +1,7 @@
+<% if !current_user %>
+  <%= render "welcome" %>
+<% end %>
+
 <% @posts.each do |post| %>
   <div class="post_wrapper">
     <h2 class="post_title">

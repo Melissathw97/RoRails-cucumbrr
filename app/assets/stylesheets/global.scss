@@ -35,7 +35,7 @@ textarea {
   border: 2px solid $green;
 }
 
-input[type="submit"] {
+input[type="submit"], .green_button {
   padding: 7px 10px;
   background: $green;
   border-radius: 5px;
