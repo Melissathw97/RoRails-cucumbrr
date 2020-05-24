@@ -26,7 +26,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to @user, notice: 'Welcome!'
+      redirect_to @user
+      flash[:notice] = "Welcome, #{current_user.email}! ;)"
     else
       render "new"
     end
