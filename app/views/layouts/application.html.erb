@@ -26,10 +26,7 @@
       <ul>
         <% if current_user %>
           <li>
-            <%= link_to current_user.email, current_user %>
-          </li>
-          <li>
-            <%= link_to "Log Out", logout_path, data: { confirm: "Log out?" } %>
+            <%= link_to current_user.username, current_user %>
           </li>
         <% else %>
           <li>

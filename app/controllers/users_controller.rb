@@ -26,8 +26,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to @user
-      flash[:notice] = "Welcome, #{current_user.email}! ;)"
+      redirect_to root_path
+      flash[:notice] = "Welcome! Please log in with your new account :)"
     else
       render "new"
     end
@@ -56,6 +56,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:email, :password, :password_confirmation)
+      params.require(:user).permit(:email, :username, :password, :password_confirmation)
     end
 end
